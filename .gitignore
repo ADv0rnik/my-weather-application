@@ -2,7 +2,8 @@
 .idea
 __pycache__
 env
-.env
+*.env
+*.env.prod.db
 db.sqlite3
 .DS_Store
 myvenv
