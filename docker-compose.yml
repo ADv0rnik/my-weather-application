@@ -3,6 +3,7 @@ version: "3.9"
 services:
   web:
     build: ./myweather
+    image: advornik1986/weather_app_psql:latest
     env_file: .env
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
