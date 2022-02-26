@@ -73,12 +73,12 @@ WSGI_APPLICATION = 'myweather.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': env('SQL_ENGINE'),
-        'NAME': env('SQL_DATABASE'),
-        'USER': env('SQL_USER'),
-        'PASSWORD': env('SQL_PASSWORD'),
-        'HOST': env('SQL_HOST'),
-        'PORT': env('SQL_PORT')
+        'ENGINE': 'django.db.backends.postgresql_psycopg2' #env('SQL_ENGINE'),
+        'NAME': 'weather',
+        'USER': 'alex' #env('SQL_USER'),
+        'PASSWORD': 'aadv1986' #env('SQL_PASSWORD'),
+        'HOST': 'db' #env('SQL_HOST'),
+        'PORT': 5432 #env('SQL_PORT')
     }
 }
 
